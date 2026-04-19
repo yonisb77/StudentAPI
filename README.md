@@ -12,19 +12,13 @@
 ---
 
 ## 📂 Projektstruktur
-
 ```text
-Solution/
-├── src/
-│   ├── 1. Domain/                  # Entiteter & Repository Interfaces
-│   ├── 2. Application/             # CQRS · Commands · Queries · Handlers
-│   │   └── Features/
-│   │       └── Kurser/
-│   │           ├── Commands/       # Create, Update, Delete
-│   │           └── Queries/        # Get
-│   ├── 3. Infrastructure/          # SkolaDbContext · EF Core · Repositories
-│   └── 4. API/                     # Controllers · Program.cs · DI-konfiguration
-└── tests/                          # xUnit enhetstester
+   ├── 1. Domain/                  # Entiteter & Repository Interfaces
+   ├── 2. Application/             # CQRS · Commands · Queries · Handlers
+   │   
+   ├── 3. Infrastructure/          # SkolaDbContext · EF Core · Repositories
+   └── 4. API/                     # Controllers · Program.cs · DI-konfiguration
+
 ```
 
 ---
