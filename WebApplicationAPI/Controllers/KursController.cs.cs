@@ -23,6 +23,6 @@ public class KursController : ControllerBase
     public async Task<IActionResult> Skapa(SkapaKursCommand command)
     {
         var kursId = await _mediator.Send(command);
-        return Ok($"Kurs skapad med ID: {kursId}");
+        return CreatedAtAction(nameof(Skapa), new { id = kursId }, "Kursen har skapats.");
     }
 }
