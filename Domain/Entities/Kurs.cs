@@ -8,3 +8,5 @@ public class Kurs
 
     public  int? LarareId { get; set; }
 }
+    public int? LarareId { get; set; }
+}
