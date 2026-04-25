@@ -16,6 +16,7 @@ builder.Services.AddDbContext<SkolaDbContext>(options =>
 
 // Registrera Repository
 builder.Services.AddScoped<IKursRepository, KursRepository>();
+builder.Services.AddScoped<ILarareRepository, LarareRepository>();
 
 // Registrera MediatR (letar upp alla handlers i Application-lagret)
 builder.Services.AddMediatR(cfg => cfg.RegisterServicesFromAssembly(typeof(Application.Queries.HamtaAllaKurserQuery).Assembly));
