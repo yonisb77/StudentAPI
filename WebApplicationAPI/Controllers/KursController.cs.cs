@@ -54,5 +54,4 @@ namespace API.Controllers
             if (!result) return NotFound();
             return Ok("Kurs raderad.");
         }
-    } // Slut på klassen
-} // Slut på namespacet
+    } 
