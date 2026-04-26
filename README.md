@@ -53,11 +53,13 @@ StudentAPI/
 
 Swagger UI är tillgängligt på `/swagger` vid körning.
 
+|-------|----------|-------------|
 | `GET` | `/api/Kurs/hamta-alla` | Hämtar samtliga kurser från databasen |
 | `GET` | `/api/Kurs/{id}` | Hämtar detaljerad information om en specifik kurs |
 | `POST` | `/api/Kurs/skapa` | Registrerar en ny kurs och kopplar den till en lärare |
 | `PUT` | `/api/Kurs/{id}` | Uppdaterar information på en befintlig kurs |
 | `DELETE` | `/api/Kurs/{id}` | Tar bort en kurs permanent från systemet |
+
 | `GET` | `/api/Larare/hamta-alla` | Hämtar samtliga lärare från databasen |
 | `GET` | `/api/Larare/{id}` | Hämtar detaljerad information om en specifik lärare |
 | `POST` | `/api/Larare/skapa` | Registrerar en ny lärare i systemet |
