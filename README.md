@@ -51,8 +51,9 @@ StudentAPI/
 
 ## 🚦 API Endpoints
 
-Swagger UI är tillgängligt på `/swagger` vid körning.
+### Kurs — Queries (Läsoperationer)
 
+| Metod | Endpoint | Beskrivning |
 |-------|----------|-------------|
 | `GET` | `/api/Kurs/hamta-alla` | Hämtar samtliga kurser från databasen |
 | `GET` | `/api/Kurs/{id}` | Hämtar detaljerad information om en specifik kurs |
@@ -60,6 +61,8 @@ Swagger UI är tillgängligt på `/swagger` vid körning.
 | `PUT` | `/api/Kurs/{id}` | Uppdaterar information på en befintlig kurs |
 | `DELETE` | `/api/Kurs/{id}` | Tar bort en kurs permanent från systemet |
 
+| Metod | Endpoint | Beskrivning |
+|-------|----------|-------------|
 | `GET` | `/api/Larare/hamta-alla` | Hämtar samtliga lärare från databasen |
 | `GET` | `/api/Larare/{id}` | Hämtar detaljerad information om en specifik lärare |
 | `POST` | `/api/Larare/skapa` | Registrerar en ny lärare i systemet |
