@@ -51,8 +51,6 @@ StudentAPI/
 
 ## 🚦 API Endpoints
 
-### Kurs — Queries (Läsoperationer)
-
 | Metod | Endpoint | Beskrivning |
 |-------|----------|-------------|
 | `GET` | `/api/Kurs/hamta-alla` | Hämtar samtliga kurser från databasen |
