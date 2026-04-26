@@ -12,14 +12,14 @@ public class LarareController : ControllerBase
     private readonly IMediator _mediator;
     public LarareController(IMediator mediator) => _mediator = mediator;
 
-    [HttpGet("hamta-alla")]
+    [HttpGet]
     public async Task<IActionResult> HamtaAlla()
     {
         var larare = await _mediator.Send(new HamtaAllaLarareQuery());
         return Ok(larare);
     }
 
-    [HttpPost("skapa")]
+    [HttpPost]
     public async Task<IActionResult> Skapa(SkapaLarareCommand command)
     {
         var id = await _mediator.Send(command);
