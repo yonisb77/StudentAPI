@@ -6,5 +6,6 @@ public class Kurs
     public string Kursnamn { get; set; } = string.Empty;
     public int Poang { get; set; }
 
-    public  int? LarareId { get; set; }
+    public int? LarareId { get; set; }
+    public Larare? Larare { get; set; } // lägg till denna
 }

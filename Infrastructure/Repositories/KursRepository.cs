@@ -11,10 +11,10 @@ public class KursRepository : IKursRepository
     public KursRepository(SkolaDbContext context) => _context = context;
 
     public async Task<IEnumerable<Kurs>> HamtaAllaAsync()
-        => await _context.Kurser.ToListAsync();
+    => await _context.Kurser.Include(k => k.Larare).ToListAsync();
 
-    public async Task<Kurs> HamtaViaIdAsync(int id)
-        => await _context.Kurser.FindAsync(id);
+    public async Task<Kurs?> HamtaViaIdAsync(int id)
+     => await _context.Kurser.Include(k => k.Larare).FirstOrDefaultAsync(k => k.Id == id);
 
     public async Task SkapaAsync(Kurs kurs)
     {
