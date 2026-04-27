@@ -1,6 +1,6 @@
 # 🎓 StudentAPI
 
-![.NET](https://img.shields.io/badge/.NET-9.0-512BD4?style=for-the-badge&logo=dotnet)
+![.NET](https://img.shields.io/badge/.NET-8.0-512BD4?style=for-the-badge&logo=dotnet)
 ![Architecture](https://img.shields.io/badge/Architecture-Clean-brightgreen?style=for-the-badge)
 ![Pattern](https://img.shields.io/badge/Pattern-CQRS-blue?style=for-the-badge)
 ![ORM](https://img.shields.io/badge/ORM-Entity_Framework_Core-orange?style=for-the-badge)
